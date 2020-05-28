@@ -1,0 +1,74 @@
+/* Nav Width for tablets */
+
+@media (max-width: 968px){
+ nav .nav-links {
+    width: 40%;
+  }
+}
+
+
+@media (max-width:600px){
+  .about__details .my__details {
+    display: block;
+    width:100%
+  }
+    .footer .footer__container {
+    display: flex;
+    flex-direction: column;
+  }
+    /* Media query for Burger*/
+  body {
+    overflow-x: hidden;
+  }
+    nav .nav-links  {
+    position : absolute;
+    right: 0;
+    top: 12vh;
+    height : 88vh;
+    background-color : #983A3A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width : 50%;
+    transform: translateX(100%);
+    transition: transform .6s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+      display: block;
+      cursor : pointer;
+  }  
+}
+
+nav .nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes fadeinnav {
+  from {
+    opacity: 0;
+    transform : translateX(50px);
+  }
+  to {
+    opacity : 1;
+    transform : translateX(0px);
+  }
+}
+
+.toggle .line1 {
+    transform : rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform : rotate(45deg) translate(-5px,-6px);
+
+}
