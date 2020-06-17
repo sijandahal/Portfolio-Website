@@ -32,6 +32,7 @@ header {
       rgba(0, 0, 0, 0.8)
     ),
     url(./img/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg);
+    background-image: url(/img/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
