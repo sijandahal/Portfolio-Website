@@ -2,10 +2,10 @@
   --color-primary: #8bc6ec;
   --color-primary-2: #9599e2;
   --color-white: #ffffff;
-  --color-light--white: #f7f7f7;
+  --color-light--white: #f7f7f8;
   --color--black: #111111;
   --color-grey: #333333;
-  --color-purple: #b10f2e;
+  --color-purple: #06f;
   --color-main: #19202a;
   --color-one: rgb(148, 115, 221);
 }
@@ -43,18 +43,28 @@ body {
 
 main {
   height: 100vh;
-  background: url(/img/lauren-mancke-aOC7TSLb1o8-unsplash.jpg) no-repeat;
-  background-size: cover;
-  background-color: rgb(228, 224, 222);
+  background-color: white;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: ;
 }
 
 main .main__details {
-  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
   position: relative;
   top: 50%;
 }
+
+main .main__details h1 {
+  font-size: 45px;
+  color: var(--color-purple);
+}
+
 
 /* NAvigation bar */
 nav {
@@ -62,23 +72,28 @@ nav {
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   min-height: 12vh;
-  background-color: #983a3a;
-  color: var(--color-light--white);
+  background-color:  #06f;
+  /* background-color: var(--color-purple); */
+  
   width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
 }
 
 nav .logo {
+  margin-left: 20px;
   text-transform: uppercase;
   font-size: 22px;
   letter-spacing: 5px;
+  color : black;
 }
 
 nav .nav-links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 30%;
 }
 
@@ -87,17 +102,18 @@ nav .nav-links {
   margin-bottom: 10px;
 }
 .nav-links li a {
+  color: #f7f7f8;
   text-decoration: none;
-  color: var(--color-light--white);
-  text-transform: uppercase;
-  font-size: 19px;
+  text-transform: capitalize;
+  font-size: 22px;
   transition: all 0.5s;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
 nav .nav-links a:hover {
-  border-bottom: 2px solid #b10f2e;
   transform: translateY(-10px);
+  color : var(--color-white);
 }
 
 .burger {
@@ -105,7 +121,7 @@ nav .nav-links a:hover {
 }
 
 .burger > div {
-  background-color: var(--color-light--white);
+  background-color:#f7f7f8;
   width: 25px;
   height: 3px;
   margin: 5px;
@@ -172,6 +188,10 @@ nav .nav-links a:hover {
   text-align: center;
 }
 
+.services p {
+  color : #7d7c83;
+}
+
 .services h2 {
   width: 70%;
   margin  :0px auto;
@@ -200,18 +220,23 @@ nav .nav-links a:hover {
   width: 300px;
   height: 304px;
   padding: 40px 20px;
-  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-light--white);
+  border-radius: 30px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 .card h4 {
   margin-bottom: 20px;
   display: inline-block;
+  color: var(--color--black);
+ 
 }
 
 .card .fas {
   display: block;
   font-size: 80px;
-  color: var(--color-purple);
+  color :  rgba(0, 102, 255, 0.788);
   margin-bottom: 20px;
 }
 
@@ -362,7 +387,7 @@ nav .nav-links a:hover {
   width: 60px;
   height: 60px;
   line-height: 60px;
-  background-color: var(--color--black);
+  background-color: var(--color-purple);
   text-align: center;
   color: var(--color-white);
   border-radius: 50%;
@@ -404,13 +429,13 @@ textarea {
   font-size: 25px;
   border: none;
   border-radius: 100px;
-  background-color: var(--color--black);
+  background-color: var(--color-purple);
   color: var(--color-white);
   text-transform: uppercase;
   margin-left: auto;
   outline: none;
   cursor: pointer;
-  border: 2px solid var(--color--black);
+  border: 2px solid var(--color-purple);
   transition: ease-out 0.6s;
 }
 
@@ -524,7 +549,7 @@ textarea {
 /* Footer */
 
 .footer {
-  background-color: #333;
+  background-color : var(--color-purple);
   color: var(--color-white);
 }
 
