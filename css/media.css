@@ -23,7 +23,7 @@
     nav .nav-links  {
     position : absolute;
     right: 0;
-    top: 10vh;
+    top: 12vh;
     height : 88vh;
     background-color : var(--color-purple);
     display: flex;
