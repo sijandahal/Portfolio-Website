@@ -337,12 +337,12 @@ nav .nav-links a:hover {
   }
  }
  
-
 .projects .project__card {
   height: auto;
   width: 300px;
   background-color: var(--color-light--white);
   border: 1px solid rgba(0, 0, 0, 0.308);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .projects .project__card h5 {
@@ -621,6 +621,33 @@ textarea {
   font-weight: 200;
   text-align: left;
 }
+
+
+
+  /* About Me section */
+
+  @media (max-width:960px) {
+
+    .about__details {
+      padding: 20px 40px;
+    }
+      .about__details .my__details {
+        display: block;
+        width:100%;
+        padding : 0px;
+      }
+    
+      .about__details .my__details p {
+         padding-left : 0px;
+         text-align: left;
+      }
+      
+      .about__details .my__details img {
+        margin-bottom: 20px;
+      }
+    
+  }
+  
 
 /* Footer */
 
