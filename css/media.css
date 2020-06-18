@@ -8,14 +8,43 @@
 
 
 @media (max-width:600px){
+ body {
+   overflow-x: hidden;
+ }
+
+  /* About Me section */
+.about__details {
+  padding: 20px 40px;
+}
   .about__details .my__details {
     display: block;
-    width:100%
+    width:100%;
+    padding : 0px;
   }
+
+  .about__details .my__details p {
+     padding-left : 0px;
+     text-align: left;
+  }
+  
+  .about__details .my__details img {
+    margin-bottom: 20px;
+  }
+
+  
+
+
+  /* Footer--Section */
+
     .footer .footer__container {
     display: flex;
     flex-direction: column;
   }
+
+  .footer .footer__container .footer__details {
+    margin-bottom: 30px;
+  }
+
     /* Media query for Burger*/
   body {
     overflow-x: hidden;
