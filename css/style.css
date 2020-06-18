@@ -35,6 +35,7 @@ header {
   background-size: cover;
   background-position: center;
 }
+
 body {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -77,12 +78,6 @@ main .main__details {
   justify-content: center;
   position: relative;
   top: 25%;
-}
-
-@media (max-width: 600px) {
-  main .main__details {
- top : 20%!important;
-}
 }
 
 main .main__details h2 {
@@ -194,6 +189,7 @@ nav .nav-links a:hover {
   width: 25px;
   height: 3px;
   margin: 5px;
+  transition: linear .5s;
 }
 
 .tech-skills {
@@ -577,7 +573,7 @@ textarea {
     margin-bottom: 50px;
   }
   .item {
-    font-size: 18px;
+    font-size: 16.5px;
   }
   .fonticon {
     margin-right: 10px;

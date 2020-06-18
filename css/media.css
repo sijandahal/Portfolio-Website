@@ -13,7 +13,6 @@
  }
   
 
-
   /* Footer--Section */
 
     .footer .footer__container {
@@ -33,7 +32,7 @@
     position : absolute;
     right: 0;
     top: 12vh;
-    height : 180px;
+    height : 150px;
     background-color : var(--color-purple);
     display: flex;
     flex-direction: column;
@@ -41,7 +40,7 @@
     justify-content: space-around;
     width : 50%;
     transform: translateY(-10000%);
-    transition: transform .6s ease-in;
+    transition: linear .5s ;
   }
 
   .nav-links li {
@@ -56,6 +55,7 @@
       color : #f7f7f8;
       display: block;
       cursor : pointer;
+      transition: all .5s;
   }  
 }
 
@@ -86,3 +86,30 @@ nav .nav-active {
   transform : rotate(45deg) translate(-5px,-6px);
 
 }
+
+/* Media Query for Container */
+
+
+  @media (max-width: 600px) {
+    .container1 {
+      width : 100%;
+    }
+  /* Header details */
+   main .main__details h2 {
+    font-size: 35px;
+  }
+  
+  main .main__details h1 {
+    font-size: 35px;
+  }
+  
+   main .main__details p {
+    font-size: 20px;
+  }
+
+  .serviceprovided {
+    justify-content: center;
+  }
+  }
+
+
