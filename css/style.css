@@ -338,6 +338,7 @@ nav .nav-links a:hover {
  }
  
 .projects .project__card {
+  margin-left: 50px;
   height: auto;
   width: 300px;
   background-color: var(--color-light--white);
@@ -641,10 +642,15 @@ textarea {
          padding-left : 0px;
          text-align: left;
       }
+
+      .about__details .my__details .about__btn {
+        margin-left: 0px;
+      }
       
       .about__details .my__details img {
         margin-bottom: 20px;
       }
+
     
   }
   
