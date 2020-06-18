@@ -79,6 +79,12 @@ main .main__details {
   top: 25%;
 }
 
+@media (max-width: 600px) {
+  main .main__details {
+ top : 20%!important;
+}
+}
+
 main .main__details h2 {
   font-size: 45px;
   color: var(--color-purple);
