@@ -11,26 +11,6 @@
  body {
    overflow-x: hidden;
  }
-
-  /* About Me section */
-.about__details {
-  padding: 20px 40px;
-}
-  .about__details .my__details {
-    display: block;
-    width:100%;
-    padding : 0px;
-  }
-
-  .about__details .my__details p {
-     padding-left : 0px;
-     text-align: left;
-  }
-  
-  .about__details .my__details img {
-    margin-bottom: 20px;
-  }
-
   
 
 
