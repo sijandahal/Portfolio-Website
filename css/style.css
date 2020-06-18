@@ -313,7 +313,6 @@ nav .nav-links a:hover {
   height: auto;
   text-align: center;
   margin-bottom: 100px;
-  display : none;
 }
 
 .border {
@@ -425,7 +424,7 @@ nav .nav-links a:hover {
   background-color: #06f;  
 }
 
-/* MEdia for project gridd */
+/* MEdia for project grid */
 
 @media (min-width : 750px) {
   .projects .project__grid {
