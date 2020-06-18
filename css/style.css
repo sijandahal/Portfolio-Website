@@ -324,6 +324,7 @@ nav .nav-links a:hover {
   display: grid;
   grid-template-columns: repeat(1, 300px);
   grid-gap: 20px;
+  justify-content: center;
 }
 
 .projects .project__card {
