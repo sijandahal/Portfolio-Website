@@ -4,7 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Link FavIcon -->
+
   <link rel="shortcut icon" href="/img/favicon (1).ico" type="image/x-icon">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/bfd368f197.js" crossorigin="anonymous"></script><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
 
   
@@ -36,11 +45,17 @@
     </nav>
     <main>
       <div class="main__details">
-        <h1>Hi ! I'm Sijan </h1>
-        <h2>Front-End Developer</h2>
+        <h1 data-aos="fade-right"
+        data-aos-duration = "3000">
+        Hi ! I'm Sijan </h1>
+
+
+        <h2 data-aos="fade-left"
+        data-aos-duration = "3000" >Front-End Developer</h2>
         <p>I craft High Quality Websites for your brand</p>
         <div class="border"></div>
-        <a class="btn main__btn " href="#"> My Resume </a>
+        <a class="btn main__btn " href="#" data-aos="fade-down"
+        data-aos-duration="2000"> My Resume </a>
       </div>
     </main>
 
@@ -50,7 +65,8 @@
   <section class="tech-skills">
     <div class="container1">
       <h2>Tech Skills </h2> <span style='font-size:100px;'>&#128736;</span>
-      <div class="tech-skills__flex">
+      <div class="tech-skills__flex" data-aos="fade-right"
+      data-aos-duration="2000">
         <div class="div">
           <div class="div__main">
             <img src="./img/html5.svg" alt="" srcset="" class="tech-image">
@@ -99,7 +115,8 @@
     </div>
 
     <div class="container">
-      <div class="serviceprovided">
+      <div class="serviceprovided"  data-aos = "zoom-in" data-aos-duration="3000">
+        
         <div class="div">
           <div class="card">
             <i class="fas fa-laptop-code"></i>
@@ -132,7 +149,10 @@
 <!-- Projects -->
 
 
-<section class="projects" id =  "projects">
+<section class="projects" id =  "projects" data-aos="fade-up" 
+                                           data-aos-duration="2000"
+                                           data-aos-easing : "linear"
+>
   <div class="container">
     <div class="projects__details">
   <h2>Projects</h2>
@@ -143,7 +163,7 @@
 
 <div class="project__grid">
   <div class="project__card">
-   <img src="./img/woman.jpg" alt="project__image">
+   <img src="./img/woman.jpg" alt="project__image" >
    <div class="project__small__details">
    <h5>Front Loop Challenges</h5>
    <p> Challenges from FrontLoop.io</p>
@@ -207,11 +227,12 @@
 
 <!-- About Details -->
 
-  <div class="about__details" id="about">
+  <div class="about__details" id="about" data-aos="fade-right" 
+  data-aos-duration="3000">
     
     <h2> ABOUT ME </h2>
     <div class="border"></div>
-    <div class="my__details">
+    <div class="my__details" >
       <img src="./img/action-blur-bulb-dark-355904 (1).jpg" alt="BulbImage" class="about__image">
       <p> I'm Sijan, junior Fornt-End Developer looking for exciting role.I focus on writing accessible HTML, using
         modern CSS practices and clean javascript. I'm based on Kathmandu Nepal. When I am not coding, you'll find me
@@ -223,10 +244,10 @@
    </div>
 
   <!-- Contact  -->
-  <div class="contact" id="contact">
+  <div class="contact" id="contact" >
     <div class="contact-page">
       <h2>Get In Touch</h2>
-      <div class="contact-info">
+      <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
         <div class="item">
           <i class="fonticon fas fa-home"></i>
           Kathmandu , Nepal
@@ -244,7 +265,7 @@
           Freelancer
         </div>
       </div>
-      <div class="form">
+      <div class="form" data-aos="fade-left" data-aos-duration="1000">
         <form class="contact-form"  name="contact" method="POST" data-netlify="true">
           <input type="text" class="textb" placeholder="Enter Name" required>
           <input type="email" class="textb" placeholder="Enter Email" required>
@@ -258,7 +279,10 @@
   <!-- Footer Section -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__container">
+      <div class="footer__container" data-aos="fade-down"
+                                    data-aos-duration="1500"
+                                    data-aos-easing="linear"
+                                    >
         <div>
           <h1 style="font-size: 25px;">Copyright &copy; All rights Reserved 2020 </h1>
         </div>
@@ -292,10 +316,20 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
-  </script>
+<!-- Smooth Scroll -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- JAvascript files -->
   <script src="/js/navigation.js"></script>
-  <script src="/js/navigation.js"> </script>
+  <script src="/js/main.js"> </script>
+<!-- ANimate On Scroll -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+
+
+</script>
 </body>
 
 </html>
