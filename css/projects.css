@@ -1,0 +1,103 @@
+:root {
+  --primary--color : #06f;
+  --secondary--color : #ffffff;
+  --secondary--color--light : #f7f7f7;
+  --color--grey : #e7edf3;
+  --color--black : #333;
+  --color--black--light : rgba(51, 51, 51, 0.541);
+}
+
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size : 16px;
+  font-family: "Montserrat", sans-serif;
+  background-color:  var(--color--grey);
+}
+
+header {
+  min-height : 40vh;
+  background-color: #06f;
+  color : var(--secondary--color--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,h2,h3,h4 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  line-height: 60px;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border : none;
+  background-color: var(--primary--color);
+  color : var(--secondary--color--light);
+  padding : 15px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 2px solid var(--primary--color);
+  transition: linear .5s;
+  animation: hoverinfinite 2s infinite;
+
+}
+
+.btn:hover {
+  color : var(--primary--color);
+  background-color: var(--secondary--color--light);
+  border : 2px solid var(--primary--color)
+}
+
+@keyframes hoverinfinite {
+  0%{
+    transform: scale(1)
+  }
+ 50% {
+   transform : scale(1.2)
+ }
+  100%{
+    transform : scale(1)
+  }
+}
+
+.section {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.section .course__link {
+  margin-bottom : 40px;
+}
+
+.course__ltitle {
+  text-align: center;
+}
+
+.underline {
+  display: inline-block;
+  text-align: center;
+  background-color: var(--primary--color);
+  width: 100px;
+  height: 5px;
+}
+
+/* main */
