@@ -101,3 +101,41 @@ h1 {
 }
 
 /* main */
+.grid {
+  width : 90%;
+  max-width : 1160px;
+  margin : 30px auto;
+}
+.grid .container {
+
+}
+
+.grid .container .card {
+  display: flex;
+    height : 300px;
+    width:300px;
+    box-shadow : rgba(0, 0, 0, 0.5);
+    background-color: var(--primary--color);
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) .5s;
+}
+
+.grid .container .card:hover {
+ cursor : pointer;
+ 
+ transform: scale(1.1);
+}
+
+.grid .container .card .card__image {
+  width: 40%;
+
+}
+
+.card__image-1  {
+  width: 300px;
+  filter: brightness(0.8);
+  transition: all .5s;
+}
+
+.card__image-1:hover {
+ filter: brightness(0.9);
+}
