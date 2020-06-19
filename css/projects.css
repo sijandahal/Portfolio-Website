@@ -132,7 +132,7 @@ h1 {
 }
 
 .grid .container .card .card__image {
-  width: 40%;
+  
 }
 
 .card__image-1  {
@@ -190,7 +190,7 @@ h1 {
   
 .grid .container {
   display: grid;
-  grid-template-columns: repeat(3,300px);
+  grid-template-columns: repeat(4,300px);
   grid-gap: 40px;
   margin : 60px auto;
   justify-content: center;
