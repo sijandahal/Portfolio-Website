@@ -183,18 +183,26 @@ h1 {
 }
 
 
-
 /* Media Query for Grid Container */
 
-@media  (min-width : 1100px) {
+@media  (min-width : 1024px) {
   
 .grid .container {
   display: grid;
-  grid-template-columns: repeat(3,300px);
+  grid-template-columns: repeat(3,300px)!important;
   grid-gap: 40px;
   margin : 60px auto;
   justify-content: center;
  }
- 
+}
+
+@media (min-width: 700px) {
+  .grid .container {
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    grid-gap: 40px;
+    margin : 60px auto;
+    justify-content: center;
+   }
 }
 
