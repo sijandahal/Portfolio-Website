@@ -450,7 +450,7 @@ nav .nav-links a:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background: url(/img/bg.png) no-repeat;
+  background: url(.././img/bg.png) no-repeat;
 }
 
 .contact-page {
