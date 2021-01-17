@@ -26,11 +26,9 @@ h2 {
 }
 
 header {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-    ),
+      rgba(0, 0, 0, 0.3)),
     url(.././img/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -109,18 +107,19 @@ main .main__details p {
   padding: 18px;
   border-radius: 20px;
   margin-top: 40px;
-  margin : 20px auto;
+  margin: 20px auto;
 }
 
 .main__btn:hover {
-    transition: all 0.5s;
-    background-color: rgba(0, 102, 255, 0.705);
-    color: #f7f7f8 !important;
-  }
-  
-  .white:hover {
-    color : var(--color-light--white);
-  }
+  transition: all 0.5s;
+  background-color: rgba(0, 102, 255, 0.705);
+  color: #f7f7f8 !important;
+}
+
+.white:hover {
+  color: var(--color-light--white);
+}
+
 /* NAvigation bar */
 nav {
   position: fixed;
@@ -149,7 +148,7 @@ nav .logo .logo__image {
   margin-right: 20px;
 }
 
-nav .logo  span {
+nav .logo span {
   color: #f7f7f8;
 
 }
@@ -165,6 +164,7 @@ nav .nav-links {
   list-style: none;
   margin-bottom: 10px;
 }
+
 .nav-links li a {
   color: #f7f7f8;
   text-decoration: none;
@@ -178,14 +178,14 @@ nav .nav-links {
 
 nav .nav-links a:hover {
   transform: translateY(-10px);
-  color: var(--color-purple);
+  /* color: var(--color-purple); */
 }
 
 .burger {
   display: none;
 }
 
-.burger > div {
+.burger>div {
   background-color: #f7f7f8;
   width: 25px;
   height: 3px;
@@ -230,6 +230,7 @@ nav .nav-links a:hover {
 .div__main {
   width: 100%;
 }
+
 .tech-image {
   display: inline-block;
   width: 130px;
@@ -250,13 +251,14 @@ nav .nav-links a:hover {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .services .servicesdetails {
   text-align: center;
 }
 
 .services p {
   color: #7d7c83;
-  padding: 20px ;
+  padding: 20px;
 }
 
 .services h2 {
@@ -264,6 +266,7 @@ nav .nav-links a:hover {
   margin: 0px auto;
   font-weight: 100;
 }
+
 .services h3 {
   display: inline-block;
   color: var(--color--black);
@@ -351,6 +354,7 @@ nav .nav-links a:hover {
 .projects .project__card .project__small__details {
   padding: 10px 30px;
 }
+
 .projects .project__card img {
   height: auto;
   width: 300px;
@@ -367,6 +371,7 @@ nav .nav-links a:hover {
 .projects .project__card .btns {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
 }
@@ -403,9 +408,9 @@ nav .nav-links a:hover {
   border-radius: 20px;
   color: white;
   cursor: pointer;
- transition: all .5s;
- text-align: center;
- font-size: 20px;
+  transition: all .5s;
+  text-align: center;
+  font-size: 20px;
 }
 
 .hover__btn:hover {
@@ -421,22 +426,23 @@ nav .nav-links a:hover {
   justify-content: center;
   width: 100%;
   height: 60px;
-  background-color: #06f;  
+  background-color: #06f;
 }
 
 /* MEdia for project grid */
 
 @media (min-width : 750px) {
   .projects .project__grid {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
- }
- 
- @media (min-width : 1050px) {
-   .projects .project__grid {
-     grid-template-columns: repeat(3,1fr);
-   }
+}
+
+@media (min-width : 1050px) {
+  .projects .project__grid {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
+
 /*  
   @media (max-width : 600px) {
     .projects .project__card {
@@ -555,10 +561,12 @@ textarea {
   .contact-page {
     max-width: 800px;
   }
+
   .contact-page h2 {
     font-size: 40px;
     margin-bottom: 20px;
   }
+
   .contact-info,
   .contact-form {
     flex: 100%;
@@ -576,16 +584,20 @@ textarea {
     font-size: 30px;
     margin-bottom: 50px;
   }
+
   .item {
     font-size: 16.5px;
   }
+
   .fonticon {
     margin-right: 10px;
   }
+
   .submit__btn {
     width: 100%;
   }
 }
+
 /* About Contact Page  */
 .about__details {
   padding: 0px 50px 40px 50px;
@@ -606,6 +618,7 @@ textarea {
   margin-top: 5px;
   margin-left: 20px;
 }
+
 .about__details .my__details {
   display: flex;
   justify-content: space-between;
@@ -636,35 +649,36 @@ textarea {
 
 
 
-  /* About Me section */
+/* About Me section */
 
-  @media (max-width:960px) {
+@media (max-width:960px) {
 
-    .about__details {
-      padding: 20px 40px;
-    }
-      .about__details .my__details {
-        display: block;
-        width:100%;
-        padding : 0px;
-      }
-    
-      .about__details .my__details p {
-         padding-left : 0px;
-         text-align: left;
-      }
-
-      .about__details .my__details .about__btn {
-        margin-left: 0px;
-      }
-      
-      .about__details .my__details img {
-        margin-bottom: 20px;
-      }
-
-    
+  .about__details {
+    padding: 20px 40px;
   }
-  
+
+  .about__details .my__details {
+    display: block;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .about__details .my__details p {
+    padding-left: 0px;
+    text-align: left;
+  }
+
+  .about__details .my__details .about__btn {
+    margin-left: 0px;
+  }
+
+  .about__details .my__details img {
+    margin-bottom: 20px;
+  }
+
+
+}
+
 
 /* Footer */
 
@@ -677,7 +691,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding : 60px 0px;
+  padding: 60px 0px;
 }
 
 .footer .footer__container .icons {
