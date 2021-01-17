@@ -1,7 +1,8 @@
 
 const navlink = document.querySelector(".nav-links");
 const burger = document.querySelector(".burger");
-const links = document.querySelectorAll (".nav-links li")
+const links = document.querySelectorAll (".nav-links li");
+const nav = document.querySelector('.navbar')
 
 burger.addEventListener('click', function() {
   navlink.classList.toggle('nav-active');
@@ -20,6 +21,11 @@ burger.addEventListener('click', function() {
       })
         //burger animation
 
-      
 });
+
+
+window.addEventListener('scroll', function(){
+  nav.classList.toggle ('sticky', window.scrollY>50)
+})
+
 
