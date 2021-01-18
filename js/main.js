@@ -15,7 +15,7 @@ fetch("https://api.github.com/users/sijandahal")
 
 
   
-   fetch("https:api.github.com/users/sijandahal/repos?per_page=100&page=1")
+   fetch("https:api.github.com/users/sijandahal/repos")
    .then(response => response.json())
    .then(function (data) {
       const arrayValues = data;
